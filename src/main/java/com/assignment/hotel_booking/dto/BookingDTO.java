@@ -1,0 +1,70 @@
+package com.assignment.hotel_booking.dto;
+
+import java.io.Serializable;
+import java.util.List;
+
+public class BookingDTO implements Serializable, IDto{
+
+	private static final long serialVersionUID = 4876670320053244228L;
+
+	private String code;
+	
+	private String primaryUserCode;
+	
+	private List<String> roomsCodeList;
+	
+	private Double totalAmount;
+	
+	private String bookingStartDate;
+	
+	private String bookingEndDate;
+
+	public String getCode() {
+		return code;
+	}
+
+	public void setCode(String code) {
+		this.code = code;
+	}
+
+	public String getPrimaryUserCode() {
+		return primaryUserCode;
+	}
+
+	public void setPrimaryUserCode(String primaryUserCode) {
+		this.primaryUserCode = primaryUserCode;
+	}
+
+	public List<String> getRoomsCodeList() {
+		return roomsCodeList;
+	}
+
+	public void setRoomsCodeList(List<String> roomsCodeList) {
+		this.roomsCodeList = roomsCodeList;
+	}
+
+	public Double getTotalAmount() {
+		return totalAmount;
+	}
+
+	public void setTotalAmount(Double totalAmount) {
+		this.totalAmount = totalAmount;
+	}
+
+	public String getBookingStartDate() {
+		return bookingStartDate;
+	}
+
+	public void setBookingStartDate(String bookingStartDate) {
+		this.bookingStartDate = bookingStartDate;
+	}
+
+	public String getBookingEndDate() {
+		return bookingEndDate;
+	}
+
+	public void setBookingEndDate(String bookingEndDate) {
+		this.bookingEndDate = bookingEndDate;
+	}
+	
+}
